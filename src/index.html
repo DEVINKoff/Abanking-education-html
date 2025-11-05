@@ -1,16 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>antools.</title>
 </head>
 
 <body>
-    
-</body>
+<header class="top-header">
+    <nav class="main-nav">
+        <div class="main-nav__logo site-logo">
+            <img class="site-logo__img" src="assets/logo.png">
+            <span class="site-logo__name">antools.</span>
+        </div>
+        <ul class="main-nav__list">
+            <li class="main-nav__item">Home</li>
+            <li class="main-nav__item main-nav__item--dropdown">Categories
+                <div class="main-nav__arrow">
+                    <img class="main-nav__arrow-icon" src="assets/arrow-down.svg">
+                </div>
+            </li>
+            <li class="main-nav__item">My Collections</li>
+            <li class="main-nav__item">Blog</li>
+        </ul>
+        <div class="main-nav__auth auth-block">
+            <button class="auth-block__btn auth-block__btn--login">Login</button>
+            <button class="auth-block__btn auth-block__btn--signup">Sign Up</button>
+        </div>
+    </nav>
+</header>
 
+<main class="main-content">
+    <section class="main-section">
+        <div class="main-section__content">
+            <div class="main-section__left">
+                <div class="main-section__text">
+                    <h1 class="main-section__title">Awesome tools for<br>Designer & Developer<span class="main-section__title-accent">.</span></h1>
+                    <p class="main-section__description">Antool is a web collection of information on paid or free Design and Development tools</p>
+                    <div class="main-section__search search-block">
+                        <span class="search-block__icon">
+                            <img class="search-block__icon-img" src="assets/search.png">
+                        </span>
+                        <input type="text" class="search-block__input" placeholder="find more than 430+ tools...">
+                        <button class="search-block__btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="main-section__social social-block">
+                    <ul class="social-block__list">
+                        <li class="social-block__item">
+                            <a href="https://facebook.com" class="social-block__link"><img class="social-block__icon" src="assets/facebook-icon.png"></a>
+                        </li>
+                        <li class="social-block__item">
+                            <a href="https://instagram.com" class="social-block__link"><img class="social-block__icon" src="assets/instagram-icon.png"></a>
+                        </li>
+                        <li class="social-block__item">
+                            <a href="https://twitter.com" class="social-block__link"><img class="social-block__icon" src="assets/twitter-icon.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="main-section__img" src="assets/illustration.svg">
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <div class="tools-section__header">
+            <h2 class="tools-section__title">Most Popular Tools</h2>
+            <p class="tools-section__description">Tools for the best Designers and Developers most popularly used in the world</p>
+        </div>
+        <ul class="tools-section__list">
+            <li class="tools-section__item tool-card">
+                <div class="tool-card__header">
+                    <img class="tool-card__icon" src="assets/figma-logo.svg">
+                    <div class="tool-card__info">
+                        <h3 class="tool-card__name">FIGMA</h3>
+                        <span class="tool-card__price">Free</span>
+                    </div>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tool-card__actions">
+                    <img class="tool-card__action tool-card__action--like" src="assets/like-icon.png">
+                    <img class="tool-card__action tool-card__action--file" src="assets/add-to-collection-icon.png">
+                    <a href="https://figma.com" class="tool-card__btn">Visit</a>
+                </div>
+            </li>
+
+            <li class="tools-section__item tool-card tool-card--special">
+                <div class="tool-card__header">
+                    <img class="tool-card__icon" src="assets/logos_sketch.svg">
+                    <div class="tool-card__info">
+                        <h3 class="tool-card__name">Sketch</h3>
+                        <span class="tool-card__price tool-card__price--special">Free</span>
+                    </div>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tool-card__actions">
+                    <div class="tool-card__like-frame">
+                        <img class="tool-card__action tool-card__action--like-special" src="assets/liked-red.png">
+                    </div>
+                    <img class="tool-card__action tool-card__action--file" src="assets/add-to-collection-icon.png">
+                    <a href="https://sketch.com" class="tool-card__btn tool-card__btn--special">Visit</a>
+                </div>
+            </li>
+
+            <li class="tools-section__item tool-card">
+                <div class="tool-card__header">
+                    <img class="tool-card__icon" src="assets/vscode-logo.svg">
+                    <div class="tool-card__info">
+                        <h3 class="tool-card__name">Visual Studio Code</h3>
+                        <span class="tool-card__price">Free</span>
+                    </div>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tool-card__actions">
+                    <img class="tool-card__action tool-card__action--like" src="assets/like-icon.png">
+                    <img class="tool-card__action tool-card__action--file" src="assets/add-to-collection-icon.png">
+                    <a href="https://code.visualstudio.com" class="tool-card__btn">Visit</a>
+                </div>
+            </li>
+
+            <li class="tools-section__item tool-card">
+                <div class="tool-card__header">
+                    <img class="tool-card__icon" src="assets/notion.png">
+                    <div class="tool-card__info">
+                        <h3 class="tool-card__name">Notion</h3>
+                        <span class="tool-card__price">Free</span>
+                    </div>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tool-card__actions">
+                    <img class="tool-card__action tool-card__action--like" src="assets/like-icon.png">
+                    <img class="tool-card__action tool-card__action--file" src="assets/add-to-collection-icon.png">
+                    <a href="https://notion.so" class="tool-card__btn">Visit</a>
+                </div>
+            </li>
+
+            <li class="tools-section__item tool-card">
+                <div class="tool-card__header">
+                    <img class="tool-card__icon" src="assets/slack-logo.svg">
+                    <div class="tool-card__info">
+                        <h3 class="tool-card__name">Slack</h3>
+                        <span class="tool-card__price">Free</span>
+                    </div>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tool-card__actions">
+                    <img class="tool-card__action tool-card__action--like" src="assets/like-icon.png">
+                    <img class="tool-card__action tool-card__action--file" src="assets/add-to-collection-icon.png">
+                    <a href="https://slack.com" class="tool-card__btn">Visit</a>
+                </div>
+            </li>
+
+            <li class="tools-section__item tool-card">
+                <div class="tool-card__header">
+                    <img class="tool-card__icon" src="assets/invision-logo.svg">
+                    <div class="tool-card__info">
+                        <h3 class="tool-card__name">Invision</h3>
+                        <span class="tool-card__price">Free</span>
+                    </div>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="tool-card__actions">
+                    <img class="tool-card__action tool-card__action--like" src="assets/like-icon.png">
+                    <img class="tool-card__action tool-card__action--file" src="assets/add-to-collection-icon.png">
+                    <a href="https://invisionapp.com" class="tool-card__btn">Visit</a>
+                </div>
+            </li>
+        </ul>
+        <button class="tools-section__load-more">Load more</button>
+    </section>
+
+    <footer class="page-footer">
+        <div class="page-footer__container">
+            <p class="page-footer__text">Trusted more than 150+ brand</p>
+            <ul class="page-footer__brands">
+                <li class="page-footer__brand">
+                    <img src="assets/microsoft-logo.png">
+                </li>
+                <li class="page-footer__brand">
+                    <img src="assets/google-logo.png">
+                </li>
+                <li class="page-footer__brand">
+                    <img src="assets/slack-logo.png">
+                </li>
+                <li class="page-footer__brand">
+                    <img src="assets/wordpress-logo.png">
+                </li>
+            </ul>
+        </div>
+    </footer>
+</main>
+</body>
 </html>
