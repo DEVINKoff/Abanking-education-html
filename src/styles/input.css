@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --brand-primary: #FF6E30;
+    --brand-secondary: #FFA537;
+    --bg-dark: #1E252B;
+    --bg-card: #283036;
+    --white-muted: rgba(255, 255, 255, 0.55);
+  }
+}
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+}
